@@ -1,0 +1,98 @@
+ex 1
+programa
+{
+	funcao inicio()
+	{
+		real sal, ssal=0.0 , msal, mfilh, maiorsal=0.0, percsal
+		inteiro filh, sfilh = 0, cont100 = 0, i
+
+		para (i=1;i<=20;i++)
+		{
+			escreva("digite seu salário: ")
+			leia(sal)
+			escreva("\ndigite o número de filhos: ")
+			leia(filh)
+
+				ssal = ssal + sal	
+				sfilh= sfilh + filh
+
+				 se (maiorsal < sal)
+				 {
+				 	maiorsal=sal
+				 	}
+
+				 se (sal <=100)
+				 {
+				 	cont100++
+				 	}
+		}
+
+				msal = ssal / 20
+				mfilh = sfilh / 20
+				percsal = (cont100*100)/20
+
+
+				
+				limpa()	
+				escreva("\nmédia de salário: ", msal)
+				escreva("\nmédia de filhos: ", mfilh)
+				escreva("\nmaior salário é ", maiorsal)
+				escreva("\npercentual de pessoas com até R$ 100 de salário: ", percsal)
+							
+			
+			}
+
+		
+	}
+
+
+ex 3
+
+programa
+{
+	funcao inicio()
+	{
+		real x, soma=0.0, media, total =0.0
+		
+		escreva ("digite um valor! ")
+		leia(x)
+
+		enquanto (x > 0)
+		{
+		soma = x + soma
+		total++
+		escreva("digite um valor! ")
+		leia(x)
+			}
+
+		media = soma / total
+		
+			escreva("\nSoma de todos os valores: ", soma)
+			escreva("\nMédia de todos os valores: ", media)
+			escreva("\nTotal de valores: ", total)
+			
+
+		
+	}
+}
+
+ex 6
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro x, soma=0, vx
+		faca
+		{
+			escreva ("digite um valor! ")
+			leia(x)
+			soma= x + 1
+			vx=x
+			}enquanto (x != vx)
+			escreva("\no resultado é: ",soma)	
+
+	
+	}
+}
